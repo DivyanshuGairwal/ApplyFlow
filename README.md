@@ -1,20 +1,110 @@
-<<<<<<< HEAD
-# React + Vite
+Job Application Tracker (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Demo: https://apply-flow-58ee.vercel.app
 
-Currently, two official plugins are available:
+ApplyFlow is a lightweight, frontend-focused job application tracker built to help candidates organize, track, and manage job applications across different hiring stages in a clean and structured way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
 
-## React Compiler
+📌 Add, edit, and delete job applications
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔄 Track application status: Applied, Interview, Offer, Rejected
 
-## Expanding the ESLint configuration
+🔍 Search and filter applications by company or status
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# ApplyFlow
->>>>>>> 6ff93ab6e4e35a0dd1137763f4654397e0bc1f37
+📊 Dashboard overview showing application progress
+
+💾 Data persistence using browser localStorage
+
+⚡ Fast and modern UI built with React + Vite
+
+🌐 Deployed on Vercel (production-ready)
+
+🛠️ Tech Stack
+
+Frontend: React, JavaScript (ES6+)
+
+Build Tool: Vite
+
+Styling: CSS (component-based)
+
+State Management: React Hooks
+
+Persistence: Browser localStorage
+
+Deployment: Vercel
+
+Version Control: Git & GitHub
+
+📂 Project Structure
+src/
+ ├─ components/        # Reusable UI components
+ ├─ assets/            # Static assets
+ ├─ styles/            # Global & component styles
+ ├─ App.jsx            # Main application logic
+ └─ main.jsx           # Application entry point
+
+🧠 Purpose & Learning Outcomes
+
+This project was built to:
+
+Practice real-world CRUD workflows in React
+
+Understand state-driven UI design
+
+Build a production-ready frontend without a backend
+
+Learn modern tooling (Vite, component structure, deployment)
+
+Prepare a strong portfolio project for frontend / SDE roles
+
+The architecture is intentionally designed to support future backend integration (REST APIs, authentication, database).
+
+🚀 Getting Started (Local Setup)
+# Clone the repository
+git clone https://github.com/DivyanshuGairwal/ApplyFlow.git
+
+# Navigate to the project directory
+cd ApplyFlow
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+
+App runs at:
+👉 http://localhost:5173
+
+🔮 Future Enhancements (Planned)
+
+Backend integration (Node.js + Express)
+
+User authentication
+
+Database persistence (MongoDB / PostgreSQL)
+
+Dark mode
+
+Analytics & export features
+
+👤 Author
+
+Divyanshu Gairwal
+
+GitHub: https://github.com/DivyanshuGairwal
+
+Live Project: https://apply-flow-58ee.vercel.app
+
+⭐ Why This Project Matters
+
+ApplyFlow demonstrates:
+
+Practical frontend engineering skills
+
+Clean component design
+
+Deployment & production readiness
+
+Problem-solving for real job-search workflows
