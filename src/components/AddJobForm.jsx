@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export default function AddJobForm({ onAdd }) {
+export default function AddJobForm({ onAdd, editingJob, onUpdate, onCancel }) {
     const [formData, setFormData] = useState({
         company: '',
         role: '',
@@ -8,17 +8,36 @@ export default function AddJobForm({ onAdd }) {
         notes: ''
     });
 
+    useEffect(() => {
+        if (editingJob) {
+            setFormData({
+                company: editingJob.company,
+                role: editingJob.role,
+                status: editingJob.status,
+                notes: editingJob.notes || ''
+            });
+        } else {
+            setFormData({ company: '', role: '', status: 'Applied', notes: '' });
+        }
+    }, [editingJob]);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!formData.company || !formData.role) return;
 
-        onAdd(formData);
-        setFormData({ company: '', role: '', status: 'Applied', notes: '' });
+        if (editingJob) {
+            onUpdate(formData);
+        } else {
+            onAdd(formData);
+            setFormData({ company: '', role: '', status: 'Applied', notes: '' });
+        }
     };
 
     return (
-        <div className="card" style={{ marginBottom: 'var(--spacing-xl)' }}>
-            <h2 style={{ fontSize: '1.25rem', marginBottom: 'var(--spacing-md)', fontWeight: 'bold' }}>Add New Application</h2>
+        <div className="card" style={{ marginBottom: 'var(--spacing-xl)', border: editingJob ? '2px solid var(--primary)' : '1px solid var(--border)' }}>
+            <h2 style={{ fontSize: '1.25rem', marginBottom: 'var(--spacing-md)', fontWeight: 'bold' }}>
+                {editingJob ? 'Edit Application' : 'Add New Application'}
+            </h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-md">
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-md)' }}>
                     <div>
@@ -71,9 +90,17 @@ export default function AddJobForm({ onAdd }) {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-primary" style={{ alignSelf: 'flex-start' }}>
-                    Add Application
-                </button>
+                <div className="flex gap-sm">
+                    <button type="submit" className="btn btn-primary">
+                        {editingJob ? 'Update Application' : 'Add Application'}
+                    </button>
+
+                    {editingJob && (
+                        <button type="button" onClick={onCancel} className="btn btn-outline">
+                            Cancel Edit
+                        </button>
+                    )}
+                </div>
             </form>
         </div>
     );

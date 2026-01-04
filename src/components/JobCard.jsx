@@ -7,7 +7,7 @@ const STATUS_COLORS = {
     'Rejected': { bg: 'var(--status-rejected)', text: 'var(--status-rejected-text)' },
 };
 
-export default function JobCard({ job, onDelete, onUpdateStatus }) {
+export default function JobCard({ job, onDelete, onUpdateStatus, onEdit }) {
     const { bg, text } = STATUS_COLORS[job.status] || STATUS_COLORS['Applied'];
 
     return (
@@ -44,12 +44,21 @@ export default function JobCard({ job, onDelete, onUpdateStatus }) {
                     <option value="Rejected">Rejected</option>
                 </select>
 
-                <button
-                    onClick={() => onDelete(job.id)}
-                    className="btn btn-danger text-sm"
-                >
-                    Delete
-                </button>
+                <div className="flex gap-sm">
+                    <button
+                        onClick={() => onEdit(job)}
+                        className="btn btn-outline text-sm"
+                        style={{ padding: '0.25rem 0.75rem' }}
+                    >
+                        Edit
+                    </button>
+                    <button
+                        onClick={() => onDelete(job.id)}
+                        className="btn btn-danger text-sm"
+                    >
+                        Delete
+                    </button>
+                </div>
             </div>
         </div>
     );
