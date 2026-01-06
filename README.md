@@ -1,83 +1,146 @@
-ApplyFlow
+ApplyFlow – Job Application Tracker
 
-Job Application Tracker (Frontend)
+ApplyFlow is a simple full-stack job application tracker built to help students and job seekers organize and track their job applications across different hiring stages.
 
-🔗 Live Demo: https://apply-flow-58ee.vercel.app
+The project focuses on practical CRUD workflows, clean UI, and understanding how a React frontend communicates with a basic backend API.
 
-ApplyFlow is a lightweight, frontend-focused job application tracker designed to help candidates keep track of job applications and their progress across different hiring stages in a simple and structured way.
-
-This project focuses on clean UI, practical workflows, and production-ready deployment rather than unnecessary complexity.
+🔗 Live Demo (Frontend): https://apply-flow-58ee.vercel.app
 
 Features
+Frontend (React + Vite)
+
+Dashboard overview showing application statistics
+(Total, Applied, Interview, Offer, Rejected)
 
 Add, edit, and delete job applications
 
-Track application status: Applied, Interview, Offer, Rejected
+Status-based tracking to reflect hiring stages
 
-Search and filter applications by company name or status
+Search and filter applications by company or status
 
-Dashboard-style overview of application progress
+Dark mode with persisted theme preference
 
-Persistent data storage using browser localStorage
+Responsive layout for desktop and mobile
 
-Fast, responsive UI built with React and Vite
+Backend (Node.js + Express)
 
-Deployed on Vercel
+REST-style CRUD APIs for managing job applications
+
+CORS-enabled API for frontend communication
+
+In-memory data storage for demonstration purposes
+(data resets on server restart)
 
 Tech Stack
 
-Frontend: React, JavaScript (ES6+)
+Frontend
 
-Build Tool: Vite
+React
 
-Styling: CSS (component-based)
+JavaScript (ES6+)
 
-State Management: React Hooks
+Vite
 
-Data Persistence: Browser localStorage
+CSS (component-based styling)
 
-Deployment: Vercel
+Fetch API
 
-Version Control: Git & GitHub
+Backend
+
+Node.js
+
+Express.js
+
+CORS
+
+State Management
+
+React Hooks (useState, useEffect)
+
+Deployment
+
+Frontend: Vercel
+
+Backend: Local development (not deployed)
 
 Project Structure
-src/
- ├── components/    # Reusable UI components
- ├── assets/        # Static assets
- ├── styles/        # Global and component styles
- ├── App.jsx        # Main application logic
- └── main.jsx       # Application entry point
+ApplyFlow/
+├── backend/
+│   ├── package.json        # Backend dependencies
+│   └── server.js           # Express server & API routes
+├── src/
+│   ├── components/         # Reusable UI components
+│   │   ├── AddJobForm.jsx
+│   │   ├── DashboardStats.jsx
+│   │   ├── Header.jsx
+│   │   ├── JobCard.jsx
+│   │   ├── JobFilter.jsx
+│   │   └── ThemeToggle.jsx
+│   ├── App.jsx             # Main application logic
+│   ├── main.jsx            # Application entry point
+│   └── index.css           # Global styles
+├── index.html
+├── package.json            # Frontend dependencies
+└── vite.config.js
 
-Purpose
+Getting Started (Local Setup)
+Prerequisites
 
-The goal of this project was to build a realistic frontend application that mirrors an actual job-search workflow. It was developed to:
+Node.js installed on your system
 
-Practice CRUD-based application logic in React
+Running the Backend
 
-Improve component structuring and state management
+The backend runs on port 5000.
 
-Understand client-side data persistence without a backend
+cd backend
+npm install
+node server.js
 
-Gain experience deploying a production-ready frontend application
+Running the Frontend
 
-The codebase is structured in a way that allows future backend integration if needed.
+Open a new terminal in the root project directory:
 
-Running Locally
-git clone https://github.com/DivyanshuGairwal/ApplyFlow.git
-cd ApplyFlow
 npm install
 npm run dev
 
 
-The application will be available at:
-http://localhost:5173
+The frontend will be available at:
+👉 http://localhost:5173
+
+API Endpoints
+
+Base URL: http://localhost:5000/api/jobs
+
+Method	Endpoint	Description
+GET	/	Fetch all job applications
+POST	/	Create a new job application
+PUT	/:id	Update an existing job
+DELETE	/:id	Delete a job
+Purpose
+
+This project was built to:
+
+Practice full CRUD workflows in a real-world application
+
+Understand frontend–backend interaction using REST APIs
+
+Improve component design and state management in React
+
+Gain experience deploying a production-ready frontend
+
+The backend is intentionally kept lightweight to focus on fundamentals rather than overengineering.
+
+Future Improvements
+
+Persist data using a database (MongoDB or PostgreSQL)
+
+User authentication (login/signup)
+
+Deploy backend to a cloud platform (Render / Railway)
+
+Role-based filtering and analytics
 
 Author
 
 Divyanshu Gairwal
 GitHub: https://github.com/DivyanshuGairwal
-
-Notes
-
-ApplyFlow is intentionally kept simple and frontend-focused.
-The emphasis is on clarity, usability, and clean implementation rather than overengineering.
