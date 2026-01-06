@@ -1,26 +1,30 @@
+ApplyFlow
+
 Job Application Tracker (Frontend)
 
 🔗 Live Demo: https://apply-flow-58ee.vercel.app
 
-ApplyFlow is a lightweight, frontend-focused job application tracker built to help candidates organize, track, and manage job applications across different hiring stages in a clean and structured way.
+ApplyFlow is a lightweight, frontend-focused job application tracker designed to help candidates keep track of job applications and their progress across different hiring stages in a simple and structured way.
 
-✨ Features
+This project focuses on clean UI, practical workflows, and production-ready deployment rather than unnecessary complexity.
 
-📌 Add, edit, and delete job applications
+Features
 
-🔄 Track application status: Applied, Interview, Offer, Rejected
+Add, edit, and delete job applications
 
-🔍 Search and filter applications by company or status
+Track application status: Applied, Interview, Offer, Rejected
 
-📊 Dashboard overview showing application progress
+Search and filter applications by company name or status
 
-💾 Data persistence using browser localStorage
+Dashboard-style overview of application progress
 
-⚡ Fast and modern UI built with React + Vite
+Persistent data storage using browser localStorage
 
-🌐 Deployed on Vercel (production-ready)
+Fast, responsive UI built with React and Vite
 
-🛠️ Tech Stack
+Deployed on Vercel
+
+Tech Stack
 
 Frontend: React, JavaScript (ES6+)
 
@@ -30,81 +34,50 @@ Styling: CSS (component-based)
 
 State Management: React Hooks
 
-Persistence: Browser localStorage
+Data Persistence: Browser localStorage
 
 Deployment: Vercel
 
 Version Control: Git & GitHub
 
-📂 Project Structure
+Project Structure
 src/
- ├─ components/        # Reusable UI components
- ├─ assets/            # Static assets
- ├─ styles/            # Global & component styles
- ├─ App.jsx            # Main application logic
- └─ main.jsx           # Application entry point
+ ├── components/    # Reusable UI components
+ ├── assets/        # Static assets
+ ├── styles/        # Global and component styles
+ ├── App.jsx        # Main application logic
+ └── main.jsx       # Application entry point
 
-🧠 Purpose & Learning Outcomes
+Purpose
 
-This project was built to:
+The goal of this project was to build a realistic frontend application that mirrors an actual job-search workflow. It was developed to:
 
-Practice real-world CRUD workflows in React
+Practice CRUD-based application logic in React
 
-Understand state-driven UI design
+Improve component structuring and state management
 
-Build a production-ready frontend without a backend
+Understand client-side data persistence without a backend
 
-Learn modern tooling (Vite, component structure, deployment)
+Gain experience deploying a production-ready frontend application
 
-Prepare a strong portfolio project for frontend / SDE roles
+The codebase is structured in a way that allows future backend integration if needed.
 
-The architecture is intentionally designed to support future backend integration (REST APIs, authentication, database).
-
-🚀 Getting Started (Local Setup)
-# Clone the repository
+Running Locally
 git clone https://github.com/DivyanshuGairwal/ApplyFlow.git
-
-# Navigate to the project directory
 cd ApplyFlow
-
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
 
 
-App runs at:
-👉 http://localhost:5173
+The application will be available at:
+http://localhost:5173
 
-🔮 Future Enhancements (Planned)
-
-Backend integration (Node.js + Express)
-
-User authentication
-
-Database persistence (MongoDB / PostgreSQL)
-
-Dark mode
-
-Analytics & export features
-
-👤 Author
+Author
 
 Divyanshu Gairwal
-
 GitHub: https://github.com/DivyanshuGairwal
 
-Live Project: https://apply-flow-58ee.vercel.app
+Notes
 
-⭐ Why This Project Matters
-
-ApplyFlow demonstrates:
-
-Practical frontend engineering skills
-
-Clean component design
-
-Deployment & production readiness
-
-Problem-solving for real job-search workflows
+ApplyFlow is intentionally kept simple and frontend-focused.
+The emphasis is on clarity, usability, and clean implementation rather than overengineering.
