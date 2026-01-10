@@ -18,7 +18,7 @@ Live Demo (Frontend): https://apply-flow-58ee.vercel.app
 - Dark mode with persisted theme preference
 - Responsive layout for desktop and mobile
  
-### Backend (Node.js + Express)
+### Backend (Node.js + Express)        
 - REST-style CRUD APIs for managing job applications
 - CORS-enabled API for frontend communication
 - In-memory data storage for demonstration purposes (data resets on server restart)
