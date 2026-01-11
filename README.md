@@ -6,7 +6,7 @@ The project focuses on practical CRUD workflows, clean UI, and understanding how
 
 Live Demo (Frontend): https://apply-flow-58ee.vercel.app
   
----
+--- 
               
 ## Features
 
