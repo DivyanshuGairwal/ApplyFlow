@@ -9,7 +9,7 @@ Live Demo (Frontend): https://apply-flow-58ee.vercel.app
 --- 
               
 ## Features
-
+  
 ### Frontend (React + Vite)
 - Dashboard overview showing application statistics (Total, Applied, Interview, Offer, Rejected)
 - Add, edit, and delete job applications           
