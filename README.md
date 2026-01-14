@@ -4,6 +4,7 @@ ApplyFlow is a simple full-stack job application tracker built to help students 
 
 The project focuses on practical CRUD workflows, clean UI, and understanding how a React frontend communicates with a basic backend API.
 
+
 Live Demo (Frontend): https://apply-flow-58ee.vercel.app
   
 --- 
