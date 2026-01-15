@@ -131,7 +131,7 @@ The backend is intentionally kept lightweight to focus on fundamentals rather th
 
 - Persist data using a database (MongoDB or PostgreSQL)
 - User authentication (login/signup)
-- Deploy backend to a cloud platform (Render or Railway)
+- Deploy backend to a cloud platform (Render or Railway)   
 - Advanced analytics and reporting
 
 ---
