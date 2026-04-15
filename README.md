@@ -15,7 +15,7 @@ Live Demo (Frontend): https://apply-flow-58ee.vercel.app
 - Dashboard overview showing application statistics (Total, Applied, Interview, Offer, Rejected)
 - Add, edit, and delete job applications           
 - Status-based tracking to reflect hiring stages
-- Search and filter applications by company or status   
+- Search and filter applications by company or status      
 - Dark mode with persisted theme preference
 - Responsive layout for desktop and mobile
  
